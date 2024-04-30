@@ -1,0 +1,21 @@
+{
+  "name": ".",
+  "description": "",
+  "db": "mongoDB",
+  "orm": "mongoose",
+  "authentication": true,
+  "roles": ["employee", "manager"],
+  "models": [
+    {
+      "name": "user",
+      "model": {
+        "username": "String",
+        "email": "String",
+        "password": "String",
+        "role": "String",
+        "refreshToken": "String",
+        "projects": "Array"
+      }
+    }
+  ]
+}
